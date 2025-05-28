@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yrobainah.github.io/portfolio-yariel/sitemap.xml
