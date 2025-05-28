@@ -14,7 +14,7 @@
         <!-- Email -->
         <div class="relative group">
           <a
-            href="mailto:yariel.dev@email.com"
+            href="mailto:yrobaina95@mail.com"
             class="text-gray-800 dark:text-gray-300 hover:text-blue-500 transition"
             aria-label="Email"
           >
@@ -39,7 +39,7 @@
         <!-- GitHub -->
         <div class="relative group">
           <a
-            href="https://github.com/yariel-dev"
+            href="https://github.com/Yrobainah"
             target="_blank"
             class="text-gray-800 dark:text-gray-300 hover:text-blue-500 transition"
             aria-label="GitHub"
@@ -65,7 +65,7 @@
         <!-- LinkedIn -->
         <div class="relative group">
           <a
-            href="https://linkedin.com/in/yariel-dev"
+            href="https://www.linkedin.com/in/yariel-robaina-hern%C3%A1ndez-39512b1a9/"
             target="_blank"
             class="text-gray-800 dark:text-gray-300 hover:text-blue-500 transition"
             aria-label="LinkedIn"
