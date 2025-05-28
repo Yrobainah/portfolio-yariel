@@ -31,10 +31,11 @@
 
 ---
 
-## 📷 Capturas
+## 📷 Capturas del portafolio
 
-| Vista Desktop | Vista Móvil |
-|---------------|-------------|
+| Desktop | Móvil |
+|---------|-------|
+| ![Desktop](./screenshots/Portfolio-Desktop.png) | ![Mobile](./screenshots/Portfolio-Mobile.png) |
 
 ---
 
