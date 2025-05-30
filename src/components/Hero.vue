@@ -5,15 +5,21 @@
   >
     <!-- Columna izquierda: texto -->
     <div class="text-center md:text-left max-w-xl">
-      <h1
-        class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4"
-        v-html="$t('hero.title')"
-      />
-
-      <p
-        class="text-lg sm:text-xl mb-6 text-gray-700 dark:text-gray-300"
-        v-html="$t('hero.description')"
-      />
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
+        {{ $t("hero.title.start") }}
+        <span class="text-blue-500">{{ $t("hero.title.end") }}</span>
+      </h1>
+      <p class="text-lg sm:text-xl mb-6 text-gray-700 dark:text-gray-300">
+        {{ $t("hero.desc.start") }}
+        <strong>{{ $t("hero.desc.backend") }}</strong>
+        {{ $t("hero.desc.middle1") }}
+        <strong>{{ $t("hero.desc.robust") }}</strong> {{ $t("hero.desc.and") }}
+        <strong>{{ $t("hero.desc.scalable") }}</strong>
+        {{ $t("hero.desc.with") }} <strong>Java</strong>,
+        <strong>Spring Boot</strong> y <strong>Python</strong>.
+        {{ $t("hero.desc.end1") }} <strong>Vue 3</strong> y
+        <strong>Tailwind CSS</strong>.
+      </p>
 
       <!-- Stack -->
       <div class="flex flex-wrap gap-3 mb-6 justify-center md:justify-start">
@@ -40,13 +46,15 @@
         <a
           href="#proyectos"
           class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition"
-          v-html="$t('hero.projectsButton')"
-        />
+        >
+          {{ $t("hero.buttonProjects") }}
+        </a>
         <a
           href="#contacto"
           class="px-6 py-3 border border-blue-600 text-blue-600 hover:bg-blue-50 dark:hover:bg-gray-800 rounded-lg font-medium transition"
-          v-html="$t('hero.contactButton')"
-        />
+        >
+          {{ $t("hero.buttonContact") }}
+        </a>
       </div>
     </div>
 

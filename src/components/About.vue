@@ -19,25 +19,29 @@
 
         <!-- Texto de presentación -->
         <div class="max-w-4xl mx-auto text-center">
-          <h2 class="text-3xl sm:text-4xl font-bold mb-6">Sobre mí</h2>
+          <h2 class="text-3xl sm:text-4xl font-bold mb-6">
+            {{ $t("about.title") }}
+          </h2>
           <p
             class="text-lg sm:text-xl leading-relaxed text-gray-700 dark:text-gray-300"
           >
-            Soy un desarrollador <strong>backend</strong> especializado en
-            <strong>Java</strong>, <strong>Spring Boot</strong> y
-            <strong>Python</strong>, con un enfoque claro en construir
-            soluciones <strong>robustas</strong>, <strong>seguras</strong> y
-            <strong>escalables</strong>. Me apasiona diseñar APIs bien
-            estructuradas, modelar datos y trabajar con arquitecturas orientadas
-            a servicios.
+            {{ $t("about.desc.start")
+            }}<strong>{{ $t("about.desc.backend") }}</strong>
+            {{ $t("about.desc.middle1") }} <strong>Java</strong>,
+            <strong>Spring Boot</strong> {{ $t("about.desc.and") }}
+            <strong>Python</strong>, {{ $t("about.desc.middle2") }}
+            <strong>{{ $t("about.desc.robust") }}</strong
+            >, <strong>{{ $t("about.desc.save") }}</strong>
+            {{ $t("about.desc.and") }}
+            <strong>{{ $t("about.desc.scalable") }}</strong
+            >. {{ $t("about.desc.end1") }}
           </p>
           <p
             class="mt-6 text-lg sm:text-xl leading-relaxed text-gray-700 dark:text-gray-300"
           >
-            Cuando el proyecto lo requiere, también tengo experiencia utilizando
-            <strong>Vue 3</strong> y <strong>Tailwind CSS</strong> para crear
-            paneles administrativos funcionales e interfaces ligeras que se
-            integran eficientemente con el backend.
+            {{ $t("about.desc.end2") }}
+            <strong>Vue 3</strong> y <strong>Tailwind CSS</strong>
+            {{ $t("about.desc.end3") }}
           </p>
         </div>
       </div>

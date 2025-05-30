@@ -5,9 +5,7 @@
     <div
       class="max-w-4xl mx-auto flex flex-col sm:flex-row justify-center items-center gap-4"
     >
-      <p class="text-sm">
-        &copy; 2025 Yariel Hernández. Todos los derechos reservados.
-      </p>
+      <p class="text-sm">&copy; YRH{{ $t("footer") }}</p>
     </div>
   </footer>
 </template>

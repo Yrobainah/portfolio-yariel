@@ -11,6 +11,8 @@
 
 <script setup>
 import { ref, watch, onMounted } from "vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import About from "./components/About.vue";
@@ -28,5 +30,11 @@ watch(isDark, (newValue) => {
 
 onMounted(() => {
   document.documentElement.classList.add("dark");
+  AOS.init({
+    duration: 1000,
+    easing: "ease-in-out",
+    offset: 100,
+    disable: "false",
+  });
 });
 </script>

@@ -4,7 +4,9 @@
     class="py-24 bg-gray-300 dark:bg-gray-800 dark:text-gray-200 transition-colors duration-500"
   >
     <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-12">Proyectos destacados</h2>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-12">
+        {{ $t("projects.title") }}
+      </h2>
 
       <!-- Carrusel -->
       <div class="relative overflow-hidden">
@@ -28,7 +30,7 @@
                   {{ project.description }}
                 </p>
                 <p class="text-sm text-blue-400 mb-4">
-                  Tecnologías: {{ project.tech }}
+                  {{ $t("projects.technologies") }}: {{ project.tech }}
                 </p>
               </div>
               <a
@@ -36,7 +38,7 @@
                 target="_blank"
                 class="text-blue-500 font-semibold hover:underline self-start"
               >
-                Ver repositorio →
+                {{ $t("projects.viewRepo") }}
               </a>
             </div>
           </div>
@@ -74,33 +76,14 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { tm } = useI18n();
+
+const projects = tm("projects.list");
 
 const active = ref(0);
 const interval = ref(null);
-
-const projects = [
-  {
-    title: "TradeSphere",
-    description:
-      "Sistema completo para la gestión de comercio con autenticación JWT, PostgreSQL y microservicios.",
-    tech: "Java, PostgreSQL, JWT, REST",
-    link: "#",
-  },
-  {
-    title: "TaskFlow",
-    description:
-      "Aplicación de tareas en Vue.js, con listas dinámicas y almacenamiento local.",
-    tech: "Vue 3, Pinia, Tailwind, LocalStorage",
-    link: "#",
-  },
-  {
-    title: "EasyStock",
-    description:
-      "Herramienta simple para el control de inventario en tiendas pequeñas, con estadísticas básicas.",
-    tech: "Vue 3, Chart.js, Tailwind",
-    link: "#",
-  },
-];
 
 // Navegación manual
 const next = () => {

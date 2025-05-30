@@ -4,10 +4,11 @@
     class="py-24 transition-colors duration-500 bg-gray-300 dark:bg-gray-800 text-gray-900 dark:text-gray-100"
   >
     <div class="max-w-xl mx-auto text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-8">Contacto</h2>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8">
+        {{ $t("contacto.title") }}
+      </h2>
       <p class="text-gray-600 mb-6 text-lg dark:text-gray-100">
-        Si estás interesado en trabajar conmigo o quieres hablar sobre un
-        proyecto, ¡no dudes en escribirme!
+        {{ $t("contacto.middle") }}
       </p>
 
       <div class="flex justify-center gap-6 text-2xl">
@@ -32,7 +33,7 @@
           <span
             class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 dark:bg-gray-300 dark:text-gray-800 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200"
           >
-            Enviar email
+            {{ $t("contacto.mailTo") }}
           </span>
         </div>
 
@@ -58,7 +59,7 @@
           <span
             class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 dark:bg-gray-300 dark:text-gray-800 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200"
           >
-            Ver GitHub
+            {{ $t("contacto.gitView") }}
           </span>
         </div>
 
@@ -84,14 +85,13 @@
           <span
             class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 dark:bg-gray-300 dark:text-gray-800 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200"
           >
-            Visitar LinkedIn
+            {{ $t("contacto.linkedInView") }}
           </span>
         </div>
       </div>
 
       <p class="mt-8 text-sm text-gray-800 dark:text-gray-200">
-        También puedes encontrarme en LinkedIn y GitHub para ver más sobre mi
-        trabajo y experiencia.
+        {{ $t("contacto.end") }}
       </p>
     </div>
   </section>

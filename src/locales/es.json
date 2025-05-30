@@ -1,25 +1,92 @@
 {
-  "hero.title": "Hola, soy Yariel 👋",
-  "hero.description": "Desarrollador <strong>backend</strong> enfocado en construir sistemas <strong>robustos</strong> y <strong>escalables</strong> con <strong>Java</strong>, <strong>Spring Boot</strong> y <strong>Python</strong>. También integro interfaces funcionales con <strong>Vue 3</strong> y <strong>Tailwind CSS</strong>.",
-  "hero.projectsButton": "Ver proyectos",
-  "hero.contactButton": "Contactar",
-    "footer.copyright": "© 2025 Yariel. Todos los derechos reservados.",
-    "projects.title": "Proyectos",
-  "projects.description": "Aquí están algunos de los proyectos en los que he trabajado.",   
-    "projects.view": "Ver proyecto",
-    "projects.more": "Más proyectos",
-    "about.title": "Sobre mí",
-    "about.description": "Soy un desarrollador backend apasionado con enfoque en Java y Vue. Me encanta construir aplicaciones escalables y eficientes.",
-    "about.skills": "Habilidades",
-    "about.experience": "Experiencia",
-    "navbar.home": "Inicio",
-    "navbar.projects": "Proyectos",
-    "navbar.about": "Sobre mí",
-    "navbar.contact": "Contacto",
-    "contact.title": "Ponte en contacto",
-    "contact.description": "No dudes en contactarme si tienes alguna pregunta o quieres colaborar.",
-    "contact.form.name": "Tu nombre",
-    "contact.form.email": "Tu correo electrónico",
-    "contact.form.message": "Tu mensaje",
-    "contact.form.send": "Enviar mensaje"
-}           
+  "hero": {
+    "title": {
+      "start":"Hola, soy",
+      "end":" Yariel 👋"},
+    "desc": {
+      "start": "Desarrollador",
+      "backend": "backend",
+      "middle1": "enfocado en construir sistemas",
+      "robust": "robustos",
+      "and": "y",
+      "scalable": "escalables",
+      "with": "con",
+      "stack": "Java, Spring Boot y Python",
+      "end1": "También integro interfaces funcionales con"
+    },
+    "buttonProjects": "Ver proyectos",
+    "buttonContact": "Contáctame"
+  },
+  "about":{
+    "title": "Sobre mí",
+    "desc": {
+      "start": "Soy un desarrollador ",
+      "backend": "backend",
+      "middle1": "especializado en",
+      "and":"y",
+      "middle2": "con un enfoque claro en construir soluciones",
+      "robust": "robustas",
+      "scalable": "escalables",
+      "save": "seguras",
+      "end1":"Me apasiona diseñar APIs bien estructuradas, modelar datos y trabajar con arquitecturas orientadas a servicios.",
+      "end2": "Cuando el proyecto lo requiere, también tengo experiencia utilizando",
+      "end3": "para crear paneles administrativos funcionales e interfaces ligeras que se integran eficientemente con el backend."
+    }
+  },
+  "projects": {
+    "title": "Proyectos destacados",
+    "viewRepo": "Ver repositorio →",
+    "technologies": "Tecnologías",
+    "list": [
+      {
+        "title": "TradeSphere",
+        "description": "Sistema completo para la gestión de comercio con autenticación JWT, PostgreSQL y microservicios.",
+        "tech": "Java, PostgreSQL, JWT, REST",
+        "repo": "#"
+      },
+      {
+        "title": "TaskFlow",
+        "description": "Aplicación de tareas en Vue.js, con listas dinámicas y almacenamiento local.",
+        "tech": "Vue 3, Pinia, Tailwind, LocalStorage",
+        "repo": "#"
+      },
+      {
+        "title": "EasyStock",
+        "description": "Herramienta simple para el control de inventario en tiendas pequeñas, con estadísticas básicas.",
+        "tech": "Vue 3, Chart.js, Tailwind",
+        "repo": "#"
+      }
+    ]
+  },
+  "services": {
+    "title": "Servicios",
+    "list": [
+      {
+        "title": "Desarrollo de APIs seguras",
+        "description": "Construcción de APIs RESTful con autenticación y buenas prácticas usando Java y PostgreSQL."
+      },
+      {
+        "title": "Dashboards y paneles admin",
+        "description": "Construcción de APIs RESTful con autenticación y buenas prácticas usando Java y PostgreSQL."
+      },
+      {
+        "title": "Aplicaciones con Vue3",
+        "description": "Apps modernas, rápidas y escalables usando Vue 3, Pinia, Tailwind y Vite."
+      }
+      ,
+      {
+        "title": "Optimización y mantenimiento",
+        "description": "Auditoría de proyectos existentes, mejoras de rendimiento y soporte técnico continuo."
+      }
+    ]
+  },
+  "contacto":{
+    "title":"Contacto",
+    "middle": "Si estás interesado en trabajar conmigo o quieres hablar sobre un proyecto, ¡no dudes en escribirme!",
+    "mailTo": "Enviar email",
+    "gitView": "Ver GitHub",
+    "linkedInView": "Ver LinkedIn",
+    "end":"También puedes encontrarme en LinkedIn y GitHub para ver más sobre mi trabajo y experiencia."
+  },
+  "footer": " Todos los derechos reservados."
+}         
