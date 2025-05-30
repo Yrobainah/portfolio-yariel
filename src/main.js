@@ -7,7 +7,7 @@ import 'aos/dist/aos.css'
 AOS.init({
     duration: 1000,
     offset: 120,
-    disable: 'mobile',
+    disable: 'false',
 })
 
 createApp(App).mount('#app')
