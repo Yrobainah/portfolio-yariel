@@ -5,16 +5,15 @@
   >
     <!-- Columna izquierda: texto -->
     <div class="text-center md:text-left max-w-xl">
-      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4">
-        Hola, soy <span class="text-blue-500">Yariel</span>
-      </h1>
-      <p class="text-lg sm:text-xl mb-6 text-gray-700 dark:text-gray-300">
-        Desarrollador <strong>backend</strong> enfocado en construir sistemas
-        <strong>robustos</strong> y <strong>escalables</strong> con
-        <strong>Java</strong>, <strong>Spring Boot</strong> y
-        <strong>Python</strong>. También integro interfaces funcionales con
-        <strong>Vue 3</strong> y <strong>Tailwind CSS</strong>.
-      </p>
+      <h1
+        class="text-4xl sm:text-5xl font-extrabold leading-tight mb-4"
+        v-html="$t('hero.title')"
+      />
+
+      <p
+        class="text-lg sm:text-xl mb-6 text-gray-700 dark:text-gray-300"
+        v-html="$t('hero.description')"
+      />
 
       <!-- Stack -->
       <div class="flex flex-wrap gap-3 mb-6 justify-center md:justify-start">
@@ -41,15 +40,13 @@
         <a
           href="#proyectos"
           class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition"
-        >
-          Ver proyectos
-        </a>
+          v-html="$t('hero.projectsButton')"
+        />
         <a
           href="#contacto"
           class="px-6 py-3 border border-blue-600 text-blue-600 hover:bg-blue-50 dark:hover:bg-gray-800 rounded-lg font-medium transition"
-        >
-          Contáctame
-        </a>
+          v-html="$t('hero.contactButton')"
+        />
       </div>
     </div>
 
